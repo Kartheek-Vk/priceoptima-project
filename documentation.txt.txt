@@ -1,0 +1,59 @@
+BASIC PANDAS OPERATIONS DOCUMENTATION
+Project: AI-PriceOptima Learning Phase
+Date: 12-11-2025
+Name: Tallapaneni Venkata Kartheek
+
+OBJECTIVE:
+To demonstrate fundamental pandas operations that form the foundation for data analysis in the PriceOptima project.
+
+OPERATIONS DEMONSTRATED:
+
+1. DATAFRAME CREATION:
+   - Created a pandas DataFrame from a Python dictionary
+   - Dataset contains product information relevant to e-commerce pricing
+
+2. head() METHOD:
+   - Purpose: Displays the first n rows of the DataFrame
+   - Default: head() shows first 5 rows
+   - Custom: head(3) shows first 3 rows
+   - Use case: Quick preview of dataset structure and content
+
+3. tail() METHOD:
+   - Purpose: Displays the last n rows of the DataFrame
+   - Default: tail() shows last 5 rows
+   - Custom: tail(3) shows last 3 rows
+   - Use case: Checking end of dataset, verifying data integrity
+
+4. BASIC DATAFRAME PROPERTIES:
+   - df.shape: Returns dimensions (rows, columns) of DataFrame
+   - df.columns: Shows all column names
+   - df.dtypes: Displays data types of each column
+   - df.describe(): Provides statistical summary of numerical columns
+
+5. COLUMN OPERATIONS:
+   - Accessing single column: df['Column_Name']
+   - Viewing specific column data with head()
+
+6. BASIC FILTERING:
+   - Conditional filtering: df[df['Category'] == 'Electronics']
+   - Extracting subsets of data based on conditions
+
+7. SORTING:
+   - sort_values('column'): Ascending order
+   - sort_values('column', ascending=False): Descending order
+
+DATASET DETAILS:
+- 10 products with various attributes
+- Columns: Product_ID, Product_Name, Price, Quantity_Sold, Category
+- Simulates real e-commerce data for PriceOptima context
+
+SIGNIFICANCE FOR PRICEOPTIMA PROJECT:
+- head()/tail(): Essential for data exploration and validation
+- Basic operations form foundation for advanced ML feature engineering
+- Understanding data structure is crucial for dynamic pricing algorithms
+
+NEXT STEPS:
+- Advanced pandas operations (groupby, merge, pivot)
+- Data cleaning and preprocessing
+- Feature engineering for pricing models
+- Integration with ML algorithms
